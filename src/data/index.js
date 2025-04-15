@@ -1,5 +1,5 @@
 export const letters = [
-  { char: 'H', img: '/portfolio-website.github.io/images/person-img-1.jpg', rotate: '-rotate-15' },
+  { char: 'H', img: '/portfolio-website.github.io/images/avatar.jpg', rotate: '-rotate-15' },
   { char: 'e', img: '/portfolio-website.github.io/images/person-img-2.jpg', rotate: 'rotate-15' },
   { char: 'l', img: '/portfolio-website.github.io/images/person-img-3.jpg', rotate: '-rotate-15' },
   { char: 'l', img: '/portfolio-website.github.io/images/person-img-4.jpg', rotate: 'rotate-15' },

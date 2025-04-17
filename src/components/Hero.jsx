@@ -6,7 +6,6 @@ import {
   aboutText,
   socialIcons,
 } from "../data/index";
-import roadImage from "/images/road.png";
 
 const Hero = () => {
   const [hoveredLetter, setHoveredLetter] = useState(null);
@@ -32,7 +31,7 @@ const Hero = () => {
     <div className="w-full h-screen flex flex-col justify-center items-center isolate">
       <Navbar />
       <div className="flex flex-col md:items-center items-start xl:gap-y-10 gap-y-3 xl:mb-0 md:mb-20 mb-20">
-        <h1 className="flex flex-col xl:space-y-8 md:space-y-4 space-y-2 xl:text-6xl md:text-4xl text-3xl md:font-normal font-bold text-yellow-500">
+        <h1 className="flex flex-col xl:space-y-8 md:space-y-4 space-y-2 xl:text-6xl md:text-4xl text-3xl md:font-normal font-bolder">
           <span className="flex">
             {letters.map((letter, index) => (
               <span
@@ -67,7 +66,7 @@ const Hero = () => {
           </span>
         </h1>
         <button
-          className="xl:w-[400px] md:w-[300px] w-[270px] bg-gray-200 md:py-1 py-0 md:px-4 px-2 xl:text-2xl md:text-xl text-base text-gray-900 tracking-widest rounded-r-4xl flex justify-between items-center md:mr-auto md:mx-0 mx-auto"
+          className="xl:w-[400px] md:w-[300px] w-[270px] bg-gray-900 dark:bg-gray-200 md:py-1 py-0 md:px-4 px-2 xl:text-2xl md:text-xl text-base text-white dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-500"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setRoadImageOpacity(0.8)}
           onMouseLeave={() => setRoadImageOpacity(0.5)}
@@ -82,7 +81,7 @@ const Hero = () => {
             <a
               href="#"
               key={index}
-              className="xl:text-3xl md:text-2xl text-yellow-500 hover:text-white transition-colors duration-500"
+              className="xl:text-3xl md:text-2xl text-red-500 dark:text-yellow-500 dark:hover:text-white hover:text-gray-900 transition-colors duration-500"
             >
               <i className={social.icon}></i>
             </a>
@@ -90,23 +89,23 @@ const Hero = () => {
         </div>
         <div className="lg:w-[600px] md:w-[500px] w-[350px] absolute left-1/2 -translate-x-1/2 -z-10">
           <img
-            src={roadImage}
+            src='images/road.png'
             alt="Road Image"
             className="w-full mx-auto transition-opacity duration-300"
             style={{ opacity: roadImageOpacity }}
           />
           <span
-            className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide text-yellow-500 absolute -top-5 xl:right-22 lg:right-26 md:right-16 right-10
+            className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute -top-5 xl:right-22 lg:right-26 md:right-16 right-10
           rotate-[3.5deg] animate-bounce"
           >
             Looking for new challenges
           </span>
           <div
-            className={`xl:h-[150px] h-[100px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-200 text-justify tracking-wide overflow-y-auto transform origin-top custom-scrollbar ${
+            className={`xl:h-[150px] h-[100px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 text-justify tracking-wide overflow-y-auto transform origin-top custom-scrollbar ${
               isTextVisible ? "scale-y-100" : "scale-y-0"
             } transition-transform duration-300`}
           >
-            <p className="xl:py-3 py-1 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-yellow-500">
+            <p className="xl:py-3 py-1 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-red-500 dark:[&::first-letter]:text-yellow-500">
               {aboutText}
             </p>
           </div>

@@ -88,7 +88,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'bottom',
+      small: 'top',
     },
   },
   {
@@ -99,7 +99,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'bottom',
+      small: 'top',
     },
   },
   {
@@ -110,7 +110,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'bottom',
+      small: 'top',
     },
   },
 ]

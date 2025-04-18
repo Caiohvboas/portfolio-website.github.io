@@ -63,7 +63,7 @@ export const skillCards = [
     title: 'Photography',
     description:
       'Photography is an essential part of digital content creation, capturing high-quality visuals that enhance branding and storytelling. I have experience in portrait, landscape, and product photography, ensuring every image is edited and optimized for the web. Understanding lighting, composition, and post-processing allows me to create compelling images that elevate visual communication across various platforms.',
-    projectCount: 4,
+    projectCount: 3,
     hoverPosition: {
       large: 'bottom',
       small: 'bottom',
@@ -74,7 +74,7 @@ export const skillCards = [
     title: 'Front-End Dev',
     description:
       'Front-end development is about bringing designs to life through clean and efficient code. I specialize in HTML, CSS, and JavaScript, along with frameworks like React to build dynamic and interactive web applications. My focus is on performance, accessibility, and responsiveness, ensuring that every website functions flawlessly across all devices and screen sizes.',
-    projectCount: 4,
+    projectCount: 3,
     hoverPosition: {
       large: 'bottom',
       small: 'bottom',
@@ -88,7 +88,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'top',
+      small: 'bottom',
     },
   },
   {
@@ -99,7 +99,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'top',
+      small: 'bottom',
     },
   },
   {
@@ -110,7 +110,7 @@ export const skillCards = [
     projectCount: 3,
     hoverPosition: {
       large: 'top',
-      small: 'top',
+      small: 'bottom',
     },
   },
 ]

@@ -8,7 +8,7 @@ const Services = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth > 1024); // 1024px is the breakpoint for large screens
+      setIsLargeScreen(window.innerWidth >= 1024); // 1024px is the breakpoint for large screens
     };
 
     checkScreenSize(); // Check on initial load
@@ -60,7 +60,7 @@ const Services = () => {
                     <a
                       href="#"
                       key={index}
-                      className="text-lg border-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                      className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
                     >
                       {index + 1}
                     </a>
@@ -76,7 +76,7 @@ const Services = () => {
                     <a
                       href="#"
                       key={index}
-                      className="text-lg border-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                      className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
                     >
                       {index + 1}
                     </a>

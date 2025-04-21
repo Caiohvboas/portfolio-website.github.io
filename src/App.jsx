@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Loader from "./components//Loader";
+import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <Hero />
             <Services />
             <Contact />
+            <Footer />
           </>
         )}
       </div>

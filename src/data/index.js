@@ -9,10 +9,10 @@ export const letters = [
 export const professionTexts = ['a Front End', 'a Back End', 'a Full Stack']
 
 export const socialIcons = [
-  { icon: 'bx bxl-instagram-alt' },
-  { icon: 'bx bxl-youtube' },
-  { icon: 'bx bxl-twitter' },
-  { icon: 'bx bxl-facebook-square' },
+  { icon: 'bx bxl-instagram-alt', link: 'https://www.instagram.com/caiovboas/' },
+  { icon: 'bx bxl-twitter', link: 'https://x.com/DevCaioVBoas' },
+  { icon: 'bx bxl-linkedin', link: 'https://www.linkedin.com/in/caio-henrique-36b470181/' },
+  { icon: 'bx bxl-github', link: 'https://github.com/Caiohvboas' },
 ]
 
 export const aboutText = `Caio is a dedicated full-stack web developer with a deep passion for building

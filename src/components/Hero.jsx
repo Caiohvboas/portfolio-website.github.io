@@ -80,8 +80,10 @@ const Hero = () => {
         <div className="flex md:gap-12 gap-2 mr-auto absolute md:relative left-4 md:left-auto top-20 md:top-auto flex-col md:flex-row">
           {socialIcons.map((social, index) => (
             <a
-              href="#"
+              href={social.link}
               key={index}
+              target="_blank"
+              rel="noopener noreferrer"
               className="xl:text-3xl md:text-2xl text-red-500 dark:text-yellow-500 dark:hover:text-white hover:text-gray-900 transition-colors duration-500"
             >
               <i className={social.icon}></i>

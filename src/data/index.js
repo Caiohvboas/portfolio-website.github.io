@@ -1,9 +1,9 @@
 export const letters = [
-  { char: 'H', img: '/portfolio-website.github.io/images/avatar.jpg', rotate: '-rotate-15' },
-  { char: 'e', img: '/portfolio-website.github.io/images/person-img-2.jpg', rotate: 'rotate-15' },
-  { char: 'l', img: '/portfolio-website.github.io/images/person-img-3.jpg', rotate: '-rotate-15' },
-  { char: 'l', img: '/portfolio-website.github.io/images/person-img-4.jpg', rotate: 'rotate-15' },
-  { char: 'o', img: '/portfolio-website.github.io/images/person-img-5.jpg', rotate: '-rotate-15' },
+  { char: 'H', img: '/portfolio-website.github.io/images/js-logo.png', rotate: '-rotate-15' },
+  { char: 'e', img: '/portfolio-website.github.io/images/react-logo.png', rotate: 'rotate-15' },
+  { char: 'l', img: '/portfolio-website.github.io/images/tailwind-logo.png', rotate: '-rotate-15' },
+  { char: 'l', img: '/portfolio-website.github.io/images/node-logo.png', rotate: 'rotate-15' },
+  { char: 'o', img: '/portfolio-website.github.io/images/git-logo.png', rotate: '-rotate-15' },
 ]
 
 export const professionTexts = ['a Front End', 'a Back End', 'a Full Stack']

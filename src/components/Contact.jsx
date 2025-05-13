@@ -2,63 +2,47 @@ import React, { useState } from "react";
 import NavigationCircles from "./NavigationCircles";
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
+  const phoneNumber = "62992502728";
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Enviando...");
-
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, message }),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setStatus("Mensagem enviada com sucesso!");
-        setEmail("");
-        setMessage("");
-      } else {
-        setStatus("Erro ao enviar a mensagem: " + (data.message || ""));
-      }
-    } catch (error) {
-      setStatus("Erro ao enviar a mensagem: " + error.message);
+    if (!message.trim()) {
+      setStatus("Por favor, digite uma mensagem antes de enviar.");
+      return;
     }
+    setStatus("");
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // Open WhatsApp chat in new tab
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
     <div id="contact" className="h-screen flex flex-col justify-center items-center">
-      <h2 className="text-4xl font-light md:mb-32 mb-24">Connect with me</h2>
+      <h2 className="text-4xl font-light md:mb-32 mb-24">Connect with me on WhatsApp</h2>
       <form onSubmit={handleSubmit} className="flex flex-col lg:space-y-12 space-y-8">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="md:w-[500px] w-[330px] h-13 pl-3 text-lg outline-0 border border-red-500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 transition-colors duration-500"
-        />
         <textarea
-          placeholder="Message"
+          placeholder="Enter your message here..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          className="md:w-[500px] w-[330px] h-13 pl-3 text-lg outline-0 border border-red-500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 min-h-[100px] max-h-[200px] resize-y p-3 transition-colors duration-500"
+          className="md:w-[500px] w-[330px] h-32 pl-3 text-lg outline-0 border border-red-500 dark:border-yellow-500 placeholder-gray-600 transition-colors duration-500 resize-y p-3"
         ></textarea>
-        <input
+        <button
           type="submit"
-          value="Stay Connected"
-          className="md:w-[500px] w-[330px] h-13 pl-3 text-lg outline-0  bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
-        />
+          className="md:w-[500px] w-[330px] h-13 pl-3 pr-4 flex items-center justify-center gap-2 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-yellow-700/50 transition-colors duration-500"
+        >
+          Whatsapp
+          <i className="bx bxl-whatsapp text-2xl"></i>
+        </button>
       </form>
-      {status && <p className="mt-4 text-lg">{status}</p>}
+      {status && <p className="mt-4 text-lg text-red-600">{status}</p>}
       <NavigationCircles section="contact" />
     </div>
   );

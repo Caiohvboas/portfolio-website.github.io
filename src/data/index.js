@@ -48,6 +48,7 @@ the digital landscape.`
 
 export const skillCards = [
   {
+    link: 'https://www.figma.com/file/0v1x2g3j4k5l6m7n8o9p0q/Design-Portfolio?type=design&node-id=0%3A1&t=abc123',
     icon: 'bx bx-pen',
     title: 'Design',
     description:

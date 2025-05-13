@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <div className="mb-4 md:mb-0">
           <p className="text-lg font-semibold">Contato:</p>
-          <p>WhatsApp: <a href="https://wa.me/5562992502728" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-500">+55 62 99250-2728</a></p>
+          <p>E-mail: <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new" target="_blank" rel="noopener noreferrer" className="underline hover:text-yellow-500">caio.boas@hotmail.com</a></p>
         </div>
         <div className="flex space-x-6 mb-4 md:mb-0">
           {socialIcons.map((social, index) => (
@@ -26,7 +26,7 @@ const Footer = () => {
           ))}
         </div>
         <div>
-          <p className="text-lg">&copy; {currentYear} Caio Vilas. Todos os direitos reservados.</p>
+          <p className="text-lg">&copy; {currentYear} Caio Vilas. All rights reserved.</p>
         </div>
       </div>
     </footer>

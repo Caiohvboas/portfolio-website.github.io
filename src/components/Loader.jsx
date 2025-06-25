@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Loader = ({ isLoading }) => {
   return (
     <div
@@ -7,9 +8,11 @@ const Loader = ({ isLoading }) => {
         isLoading ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <img src="images/loading-gif-1.gif" alt="Loader" className="w-40" />
+      <img src="images/loading.gif" alt="Loader" className="w-40" />
     </div>
   );
 };
 
 export default Loader;
+
+

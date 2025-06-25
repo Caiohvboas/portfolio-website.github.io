@@ -48,70 +48,99 @@ the digital landscape.`
 
 export const skillCards = [
   {
-    link: 'https://www.figma.com/file/0v1x2g3j4k5l6m7n8o9p0q/Design-Portfolio?type=design&node-id=0%3A1&t=abc123',
     icon: 'bx bx-pen',
     title: 'Design',
     description:
       'Design is all about creating visually appealing and user-friendly interfaces. I specialize in UI/UX design, ensuring every project balances aesthetics with functionality. Using tools like Figma and Adobe XD, I craft intuitive layouts that enhance user experience. From wireframes to high-fidelity prototypes, I focus on clean, minimal, and modern designs tailored for web and mobile applications.',
-    projectCount: 3,
+    
     hoverPosition: {
       large: 'bottom',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
   {
-    icon: 'bx bx-camera',
-    title: 'Photography',
+    icon: 'bx  bxl-react',
+    title: 'React',
     description:
-      'Photography is an essential part of digital content creation, capturing high-quality visuals that enhance branding and storytelling. I have experience in portrait, landscape, and product photography, ensuring every image is edited and optimized for the web. Understanding lighting, composition, and post-processing allows me to create compelling images that elevate visual communication across various platforms.',
-    projectCount: 3,
+      `With a focus on developing modern and efficient user interfaces, React is one of the tools that truly drives me. I use this powerful JavaScript library to create reusable components and dynamic web applications, ensuring a fluid and interactive user experience. My experience with React includes manipulating the Virtual DOM for performance optimization, using hooks to elegantly manage states and side effects, and integrating with other technologies to build complete solutions. I'm capable of developing anything from responsive landing pages to complex Single Page Applications (SPAs), always striving for best practices and code quality. Explore my projects to see how React allows me to transform ideas into functional and visually appealing interfaces!`,
+    
     hoverPosition: {
       large: 'bottom',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
   {
     icon: 'bx bxs-file-doc',
     title: 'Front-End Dev',
     description:
       'Front-end development is about bringing designs to life through clean and efficient code. I specialize in HTML, CSS, and JavaScript, along with frameworks like React to build dynamic and interactive web applications. My focus is on performance, accessibility, and responsiveness, ensuring that every website functions flawlessly across all devices and screen sizes.',
-    projectCount: 3,
+    
     hoverPosition: {
       large: 'bottom',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
   {
     icon: 'bx bxs-devices',
     title: 'RWD',
     description:
       "In today's digital world, ensuring a seamless user experience across all devices is crucial. I implement responsive design techniques using modern CSS frameworks like Tailwind CSS and Bootstrap. By employing fluid grids, flexible layouts, and media queries, I create web pages that look great and function perfectly on desktops, tablets, and smartphones.",
-    projectCount: 3,
+    
     hoverPosition: {
       large: 'top',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
   {
     icon: 'bx bx-data',
     title: 'Back-End Dev',
     description:
       'Back-end development powers the functionality behind web applications. I work with Node.js and databases like MongoDB and PostgreSQL to build secure and scalable server-side applications. Whether handling authentication, managing API requests, or optimizing database queries, I ensure data is processed efficiently and securely to support seamless front-end interactions.',
-    projectCount: 3,
+    
     hoverPosition: {
       large: 'top',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
   {
     icon: 'bx bxl-github',
     title: 'Git Version Control',
     description:
       'Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and tracking project changes. Whether working solo or in a team, I ensure code is well-documented, structured, and easily maintainable through proper versioning practices.',
-    projectCount: 3,
+    
     hoverPosition: {
       large: 'top',
       small: 'bottom',
     },
+    projectLinks: [
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+      'https://github.com/Caiohvboas',
+    ],
   },
 ]

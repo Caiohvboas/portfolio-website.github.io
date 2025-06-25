@@ -56,15 +56,17 @@ const Services = () => {
             >
               {isLargeScreen && card.hoverPosition.large === "top" && (
                 <div className="flex justify-between">
-                  {[...Array(card.projectCount)].map((_, i) => (
-                    <a
-                      href="#"
-                      key={index}
-                      className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
-                    >
-                      {index + 1}
-                    </a>
-                  ))}
+              {[...Array(card.projectLinks.length)].map((_, i) => (
+                <a
+                  href={card.projectLinks[i]}
+                  key={`${index}-${i}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                >
+                  {i + 1}
+                </a>
+              ))}
                 </div>
               )}
               <h2 className="text-2xl text-center text-gray-900 dark:text-white font-light tracking-wide">
@@ -72,15 +74,17 @@ const Services = () => {
               </h2>
               {(!isLargeScreen || (isLargeScreen && card.hoverPosition.large === "bottom")) && (
                 <div className="flex justify-between">
-                  {[...Array(card.projectCount)].map((_, i) => (
-                    <a
-                      href="#"
-                      key={index}
-                      className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
-                    >
-                      {index + 1}
-                    </a>
-                  ))}
+              {[...Array(card.projectLinks.length)].map((_, i) => (
+                <a
+                  href={card.projectLinks[i]}
+                  key={`${index}-${i}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg border-red-500 bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                >
+                  {i + 1}
+                </a>
+              ))}
                 </div>
               )}
             </div>
